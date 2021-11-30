@@ -8,11 +8,17 @@ const StyledContainer = styled.div`
   font-weight: bold;
   letter-spacing: 0.125em;
   line-height: 1.25em;
-  /* border: 2px solid red; */
   & p {
     font-size: 0.25em;
     text-transform: lowercase;
     font-weight: 800;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    & svg {
+      width: 5%;
+      height: auto;
+    }
   }
   & span {
     color: #5bccf6;
