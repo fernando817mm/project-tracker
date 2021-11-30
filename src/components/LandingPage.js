@@ -9,7 +9,7 @@ const LandingPage = () => {
     <>
       <Navigation />
       <StyledLandingPage>
-        <StyledContainer>
+        <StyledContainer className="one">
           <h1>
             welcome<span>,</span>
             <br />
@@ -19,9 +19,18 @@ const LandingPage = () => {
             <br />
           </h1>
           <p>
-            scroll to register <Logo />
+            scroll for more information <Logo />
           </p>
         </StyledContainer>
+        <div className="info two">
+          <h1>First Page</h1>
+        </div>
+        <div className="info three">
+          <h1>Second Page</h1>
+        </div>
+        <div className="info four">
+          <h1>Third Page</h1>
+        </div>
       </StyledLandingPage>
     </>
   );
