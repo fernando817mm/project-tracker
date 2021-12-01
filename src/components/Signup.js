@@ -33,7 +33,7 @@ const Signup = () => {
             <h2>Sign up</h2>
             <form onSubmit={handleSubmit}>
               <div className="input-box">
-                <span>first name</span>
+                <span>First Name</span>
                 <input
                   type="text"
                   name="firstName"
@@ -44,7 +44,7 @@ const Signup = () => {
                 />
               </div>
               <div className="input-box">
-                <span>last name</span>
+                <span>Last Name</span>
                 <input
                   type="text"
                   name="lastName"
@@ -55,7 +55,7 @@ const Signup = () => {
                 />
               </div>
               <div className="input-box">
-                <span>email</span>
+                <span>Email</span>
                 <input
                   type="email"
                   name="email"
@@ -66,12 +66,11 @@ const Signup = () => {
                 />
               </div>
               <div className="input-box">
-                <span>password</span>
+                <span>Password</span>
                 <input
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="*****"
                   onChange={handleChange}
                   value={formValue.password}
                 />

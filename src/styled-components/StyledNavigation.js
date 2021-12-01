@@ -21,6 +21,21 @@ const StyledNavigation = styled.div`
     text-decoration: none;
     font-weight: 500;
   }
+  & .nav-links a::after {
+    content: "";
+    background: #5bccf6;
+    display: block;
+    margin-top: 5%;
+    height: 0.25em;
+    width: 0;
+    transition: all ease-in-out 0.15s;
+  }
+  & .nav-links a:hover::after {
+    width: 100%;
+  }
+  & .nav-links a.active::after {
+    width: 100%;
+  }
   & a svg {
     margin-left: 0.25%;
     width: 125%;

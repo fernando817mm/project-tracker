@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledSignup = styled.div`
+const StyledLogin = styled.div`
   position: relative;
   width: 90%;
   height: 85vh;
@@ -122,8 +122,6 @@ const StyledSignup = styled.div`
     font-weight: bold;
   }
 
-  #firstName,
-  #lastName,
   #email,
   #password {
     font-size: 1em;
@@ -155,4 +153,4 @@ const StyledSignup = styled.div`
     }
   }
 `;
-export default StyledSignup;
+export default StyledLogin;

@@ -11,8 +11,12 @@ const Navigation = () => {
         <Logo />
       </NavLink>
       <div className="nav-links">
-        <NavLink to="/signup">Sign Up</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/signup" className="navButton">
+          Sign Up
+        </NavLink>
+        <NavLink to="/login" className="navButton">
+          Login
+        </NavLink>
       </div>
     </StyledNavigation>
   );
