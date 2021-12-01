@@ -4,13 +4,24 @@ const StyledNavigation = styled.div`
   position: fixed;
   width: 100%;
   height: 5vh;
-  max-width: 100%;
   background-color: transparent;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  & svg {
+  & .nav-links {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  & a {
+    color: #393d3f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  & a svg {
     margin-left: 0.25%;
-    width: 2.25%;
+    width: 125%;
     height: auto;
     transform: rotate(45deg);
   }

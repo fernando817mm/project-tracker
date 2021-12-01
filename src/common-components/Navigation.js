@@ -1,15 +1,18 @@
 import React from "react";
 import { ReactComponent as Logo } from "../icons/attach_file_black_24dp.svg";
 import StyledNavigation from "../styled-components/StyledNavigation";
+import { NavLink } from "react-router-dom";
+import "../index.css";
 
 const Navigation = () => {
   return (
     <StyledNavigation>
-      <Logo />
+      <NavLink to="/">
+        <Logo />
+      </NavLink>
       <div className="nav-links">
-        <a href="#" className="navLink"></a>
-        <a href="#" className="navLink"></a>
-        <a href="#" className="navLink"></a>
+        <NavLink to="/signup">Sign Up</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </div>
     </StyledNavigation>
   );

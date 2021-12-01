@@ -5,6 +5,7 @@ const StyledLandingPage = styled.div`
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  color: #393d3f;
   & div.info {
     height: 100vh;
     width: 100%;
