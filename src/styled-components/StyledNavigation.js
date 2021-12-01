@@ -9,10 +9,11 @@ const StyledNavigation = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 2% 2%;
+  z-index: 100;
   & .nav-links {
     display: flex;
-    width: 10%;
-    justify-content: space-around;
+    width: 12.5%;
+    justify-content: space-between;
     align-items: center;
   }
   & a {

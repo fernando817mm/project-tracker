@@ -15,18 +15,21 @@ const LandingPage = () => {
           project tracker
           <br />
         </h1>
-        <p>
+        {/* <p>
           scroll for more information <Logo />
+        </p> */}
+        <p>
+          scroll for more information <div className="scroll-down"></div>
         </p>
       </StyledContainer>
       <div className="info two">
-        <h1>First Page</h1>
-      </div>
-      <div className="info three">
         <h1>Second Page</h1>
       </div>
-      <div className="info four">
+      <div className="info three">
         <h1>Third Page</h1>
+      </div>
+      <div className="info four">
+        <h1>Fourth Page</h1>
       </div>
     </StyledLandingPage>
   );

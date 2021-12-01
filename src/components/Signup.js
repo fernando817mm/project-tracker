@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import StyledSignup from "../styled-components/StyledSignup";
 
@@ -12,7 +12,7 @@ const initialState = {
 
 const Signup = () => {
   const [formValue, setFormValue] = useState(initialState);
-  const { push } = useHistory();
+  // const { push } = useHistory();
 
   const handleChange = (e) => {
     setFormValue({
@@ -89,8 +89,8 @@ const Signup = () => {
         </div>
         <div className="img-box">
           <img
-            src="https://images.unsplash.com/photo-1591617870684-6e861e6a48ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3292&q=80"
-            alt="pink flower growing in a graph like manner"
+            src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            alt="wireframe on an iPad"
           />
         </div>
       </StyledSignup>
