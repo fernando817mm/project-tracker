@@ -1,15 +1,29 @@
 import styled from "styled-components";
 
 const StyledNavigation = styled.div`
+  position: fixed;
+  width: 100%;
   height: 5vh;
-  max-width: 100%;
-  background-color: #faf3c0;
+  background-color: transparent;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  & svg {
-    padding: 2% 1.5%;
-    margin-top: 2%;
-    width: 2.25%;
+  padding: 2% 2%;
+  z-index: 100;
+  & .nav-links {
+    display: flex;
+    width: 12.5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & a {
+    color: #393d3f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  & a svg {
+    margin-left: 0.25%;
+    width: 125%;
     height: auto;
     transform: rotate(45deg);
   }
