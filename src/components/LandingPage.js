@@ -1,7 +1,6 @@
 import React from "react";
 import StyledLandingPage from "../styled-components/StyledLandingPage";
 import StyledContainer from "../styled-components/StyledContainer";
-import { ReactComponent as Logo } from "../icons/arrow_drop_down_black_24dp.svg";
 
 const LandingPage = () => {
   return (
@@ -15,9 +14,6 @@ const LandingPage = () => {
           project tracker
           <br />
         </h1>
-        {/* <p>
-          scroll for more information <Logo />
-        </p> */}
         <p>
           scroll for more information <div className="scroll-down"></div>
         </p>
