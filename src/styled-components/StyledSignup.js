@@ -56,7 +56,6 @@ const StyledSignup = styled.div`
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 10%;
-    border-bottom: 0.125em solid #5bccf6;
     display: inline-block;
     letter-spacing: 0.125em;
   }
