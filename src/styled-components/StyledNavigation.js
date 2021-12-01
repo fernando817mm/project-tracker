@@ -8,6 +8,7 @@ const StyledNavigation = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2% 2%;
   & .nav-links {
     display: flex;
     width: 10%;
