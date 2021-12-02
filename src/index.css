@@ -141,8 +141,8 @@ div.bg {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #faf3c0;
-  border: 2px solid #faf3c0;
+  background-color: white;
+  border: 1px solid white;
   position: relative;
 }
 
