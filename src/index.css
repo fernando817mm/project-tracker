@@ -146,16 +146,9 @@ div.bg {
   position: relative;
 }
 
-div.bg .signup-background {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-div.bg .login-background {
+div.bg .signup-background,
+.login-background,
+.dashboard-background {
   position: absolute;
   left: 0;
   right: 0;
