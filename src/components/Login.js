@@ -70,7 +70,6 @@ const Login = () => {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="schrutefarms@gmail.com"
                   onChange={handleChange}
                   value={formValue.email}
                 />
