@@ -15,6 +15,8 @@ const StyledContainer = styled.div`
   line-height: 1.25em;
   text-align: right;
   scroll-snap-align: start;
+  position: relative;
+  z-index: 10;
   & p {
     font-size: 0.25em;
     text-transform: lowercase;
@@ -62,6 +64,16 @@ const StyledContainer = styled.div`
     animation-delay: 0.375s;
   }
 
+  & .first,
+  .third {
+    animation: 1s ease-out 0s 1 slide-from-left;
+  }
+
+  & .second,
+  .fourth {
+    animation: 1s ease-out 0s 1 slide-from-right;
+  }
+
   @keyframes scroll-down {
     0% {
       opacity: 0;
@@ -75,6 +87,28 @@ const StyledContainer = styled.div`
     100% {
       opacity: 0;
       top: 100%;
+    }
+  }
+
+  @keyframes slide-from-left {
+    0% {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-from-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 `;
