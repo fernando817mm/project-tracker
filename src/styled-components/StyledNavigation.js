@@ -19,7 +19,7 @@ const StyledNavigation = styled.div`
   & a {
     color: #393d3f;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bolder;
   }
   & .nav-links a::after {
     content: "";
