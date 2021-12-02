@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import StyledSignup from "../styled-components/StyledSignup";
+import Wave from "react-wavify";
 
 const initialState = {
   firstName: "",
@@ -27,6 +27,39 @@ const Signup = () => {
   };
   return (
     <div className="bg">
+      <Wave
+        fill="rgba(255, 186, 1, 0.8)"
+        paused={false}
+        options={{
+          height: 60,
+          amplitude: 60,
+          speed: 0.15,
+          points: 4,
+        }}
+        className="signup-background"
+      />
+      <Wave
+        fill="rgba(252, 222, 103, 0.8)"
+        paused={false}
+        options={{
+          height: 70,
+          amplitude: 40,
+          speed: 0.25,
+          points: 3,
+        }}
+        className="signup-background"
+      />
+      <Wave
+        fill="rgba(250, 243, 192, 0.8)"
+        paused={false}
+        options={{
+          height: 120,
+          amplitude: 40,
+          speed: 0.25,
+          points: 5,
+        }}
+        className="signup-background"
+      />
       <StyledSignup>
         <div className="content-box">
           <div className="form-box">
@@ -38,7 +71,6 @@ const Signup = () => {
                   type="text"
                   name="firstName"
                   id="firstName"
-                  placeholder="Dwight"
                   onChange={handleChange}
                   value={formValue.firstName}
                 />
@@ -49,7 +81,6 @@ const Signup = () => {
                   type="text"
                   name="lastName"
                   id="lastName"
-                  placeholder="Schrute"
                   onChange={handleChange}
                   value={formValue.lastName}
                 />
@@ -60,7 +91,6 @@ const Signup = () => {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="schrutefarms@gmail.com"
                   onChange={handleChange}
                   value={formValue.email}
                 />
@@ -86,12 +116,12 @@ const Signup = () => {
             </form>
           </div>
         </div>
-        <div className="img-box">
+        {/* <div className="img-box">
           <img
             src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
             alt="wireframe on an iPad"
           />
-        </div>
+        </div> */}
       </StyledSignup>
     </div>
   );
