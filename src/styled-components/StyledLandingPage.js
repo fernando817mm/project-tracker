@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const StyledLandingPage = styled.div`
-  background-color: #faf3c0;
+  position: relative;
+  /* background-color: #faf3c0; */
+  background-color: white;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -18,7 +20,14 @@ const StyledLandingPage = styled.div`
     font-weight: bold;
     scroll-snap-align: start;
   }
-
+  & .landing-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
   /* All should have the bg-color: #faf3c0 - These are for when each page has its own content */
   & .two {
     background-color: #fcde67;

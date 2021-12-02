@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const StyledSignup = styled.div`
   position: relative;
-  width: 90%;
+  width: 50%;
   height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% 5%;
-  background-color: rgba(252, 222, 103, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.16) 0 0.1em 0.4em;
+  margin: 5% auto;
+  /* background-color: rgb(252, 222, 103); */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0 0.1em 0.4em; */
+  z-index: 10;
 
   & .img-box {
     position: relative;
@@ -47,20 +48,20 @@ const StyledSignup = styled.div`
   }
 
   & .content-box .form-box {
-    width: 50%;
+    width: 100%;
   }
 
   & .content-box .form-box h2 {
     width: 100%;
     color: #393d3f;
-    font-size: 2em;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 1000;
+    font-size: 2.25em;
+    font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: 10%;
     display: inline-block;
     letter-spacing: 0.125em;
     text-align: center;
+    /* text-shadow: 0px 2px 3px rgba(3, 14, 18, 0.53); */
   }
 
   & .content-box .form-box .input-box {
@@ -68,11 +69,11 @@ const StyledSignup = styled.div`
   }
 
   & .content-box .form-box .input-box span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2.5%;
     display: inline-block;
-    color: #030e12;
-    font-weight: 500;
+    color: #393d3f;
+    font-weight: bolder;
     letter-spacing: 0.125em;
   }
 
@@ -80,10 +81,10 @@ const StyledSignup = styled.div`
     width: 100%;
     padding: 2% 5%;
     outline: none;
-    font-weight: 500;
-    border: 0.125em solid #4f4f4f;
+    font-weight: bolder;
+    border: 0.125em solid #393d3f;
     font-size: 1.25rem;
-    color: #4f4f4f;
+    color: #030e12;
     background: transparent;
     border-radius: 2em;
     transition: all ease-in 0.1s;
