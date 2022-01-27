@@ -45,6 +45,9 @@ const StyledNavigation = styled.div`
   & h2 {
     font-size: 2rem;
   }
+  & .lastInitial {
+    color: #5bccf6;
+  }
 `;
 
 export default StyledNavigation;

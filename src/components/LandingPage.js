@@ -41,16 +41,12 @@ const LandingPage = () => {
       />
       <StyledContainer className="one">
         <h1>
-          <div className="title first">
-            welcome<span>,</span>
-          </div>
-          <div className="title second">
-            to the <span>-</span>
-          </div>
-          <div className="title third">project tracker</div>
+          <div className="title first">Fernando</div>
+          <div className="title second">Martinez</div>
+          <div className="title third">Full Stack Developer</div>
         </h1>
         <p className="title fourth">
-          scroll for more information <div className="scroll-down"></div>
+          scroll for more information<div className="scroll-down"></div>
         </p>
       </StyledContainer>
       <div className="info two">

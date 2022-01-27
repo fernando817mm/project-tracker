@@ -9,7 +9,9 @@ const Navigation = () => {
     <StyledNavigation>
       <NavLink to="/">
         {/* <Logo /> */}
-        <h2>FM</h2>
+        <h2>
+          F<span className="lastInitial">M</span>
+        </h2>
       </NavLink>
       <div className="nav-links">
         <NavLink to="/signup" className="navButton">
