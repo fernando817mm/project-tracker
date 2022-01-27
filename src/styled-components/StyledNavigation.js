@@ -42,6 +42,9 @@ const StyledNavigation = styled.div`
     height: auto;
     transform: rotate(45deg);
   }
+  & h2 {
+    font-size: 2rem;
+  }
 `;
 
 export default StyledNavigation;

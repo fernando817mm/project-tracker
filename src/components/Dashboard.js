@@ -1,6 +1,7 @@
 import React from "react";
 import Wave from "react-wavify";
 import DashNav from "../common-components/DashNav";
+import StyledDashNav from "../styled-components/StyledDashNav";
 
 const Dashboard = () => {
   return (
@@ -38,7 +39,9 @@ const Dashboard = () => {
         }}
         className="dashboard-background"
       />
-      <DashNav />
+      <StyledDashNav>
+        <DashNav />
+      </StyledDashNav>
     </div>
   );
 };
