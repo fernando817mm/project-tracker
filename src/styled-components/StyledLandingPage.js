@@ -8,6 +8,9 @@ const StyledLandingPage = styled.div`
   overflow-y: scroll;
   height: 100vh;
   color: #393d3f;
+  font-family: "Sora", sans-serif;
+  scroll-behavior: smooth;
+
   & div.info {
     height: 100vh;
     width: 100%;
@@ -16,7 +19,6 @@ const StyledLandingPage = styled.div`
     align-items: center;
     font-size: 2em;
     text-transform: uppercase;
-    font-family: "Nanum Myeongjo", serif;
     font-weight: bold;
     scroll-snap-align: start;
   }
@@ -31,12 +33,15 @@ const StyledLandingPage = styled.div`
   /* All should have the bg-color: #faf3c0 - These are for when each page has its own content */
   & .two {
     background-color: #fcde67;
+    /* background-color: #faedaf; */
   }
   & .three {
     background-color: #e9f1f7;
+    /* background-color: #faedaf; */
   }
   & .four {
     background-color: #ffba01;
+    /* background-color: #faedaf; */
   }
 `;
 

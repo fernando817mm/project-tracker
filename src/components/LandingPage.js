@@ -39,7 +39,7 @@ const LandingPage = () => {
         }}
         className="landing-background"
       />
-      <StyledContainer className="one">
+      <StyledContainer className="one" id="home">
         <h1>
           <div className="title first">Fernando</div>
           <div className="title second">Martinez</div>
@@ -49,14 +49,14 @@ const LandingPage = () => {
           scroll for more information<div className="scroll-down"></div>
         </p>
       </StyledContainer>
-      <div className="info two">
-        <h1>Second Page</h1>
+      <div className="info two" id="about">
+        <h1>About</h1>
       </div>
-      <div className="info three">
-        <h1>Third Page</h1>
+      <div className="info three" id="projects">
+        <h1>Projects</h1>
       </div>
-      <div className="info four">
-        <h1>Fourth Page</h1>
+      <div className="info four" id="contact">
+        <h1>Contact</h1>
       </div>
     </StyledLandingPage>
   );

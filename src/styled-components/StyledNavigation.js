@@ -10,11 +10,13 @@ const StyledNavigation = styled.div`
   align-items: center;
   padding: 2% 2%;
   z-index: 100;
+
   & .nav-links {
     display: flex;
-    width: 12.5%;
+    width: 30%;
     justify-content: space-between;
     align-items: center;
+    font-family: "Sora", sans-serif;
   }
   & a {
     color: #393d3f;
