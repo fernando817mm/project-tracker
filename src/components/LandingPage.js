@@ -2,6 +2,7 @@ import React from "react";
 import StyledLandingPage from "../styled-components/StyledLandingPage";
 import StyledContainer from "../styled-components/StyledContainer";
 import Wave from "react-wavify";
+import portrait from "./../images/portrait.jpeg";
 
 const LandingPage = () => {
   return (
@@ -50,7 +51,28 @@ const LandingPage = () => {
         </p>
       </StyledContainer>
       <div className="info two" id="about">
-        <h1>About</h1>
+        <section className="aboutContainer">
+          <div className="aboutTitle">
+            <h1>About me</h1>
+            <h2>
+              <span>¡Hola! I'm Fernando Mauricio Martinez</span> (he/him) - a
+              Texas-born, first-generation Mexican-American Full-Stack Developer
+            </h2>
+          </div>
+          <div className="aboutParagraph">
+            <img
+              src={portrait}
+              alt="Fernando with Colorado mountains in the background."
+            />
+            <p>
+              After graduating high school with a STEM endorsement, I attended
+              and graduated Bloom Institute of Technology, formerly known as
+              Lambda School. Reinforcing and adding new skills to my arsenal.
+              Skills such as (in no specific order); HTML, CSS, Javascript,
+              React, Redux, Git, Less, Node, SQL, Python, etc.
+            </p>
+          </div>
+        </section>
       </div>
       <div className="info three" id="projects">
         <h1>Projects</h1>
