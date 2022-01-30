@@ -104,13 +104,13 @@ const StyledLandingPage = styled.div`
       }
     }
     & div.photoTitle {
-      padding: 0 20% 0 0;
+      margin: 5% 20% 0 0;
       height: 60vh;
       & .image-row {
         display: flex;
         height: 50%;
         width: 100%;
-        margin: 0;
+        margin: 2% 2%;
         padding: 0;
       }
       & img {
@@ -119,7 +119,10 @@ const StyledLandingPage = styled.div`
         background-position: center center;
         height: 100%;
         width: auto;
-        padding: 1%;
+        margin: 0 1%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
       }
       & .image-01 {
         flex: 1;
@@ -140,6 +143,7 @@ const StyledLandingPage = styled.div`
         flex: 2;
         transform: scaleX(-1);
         padding-right: 10%;
+        box-shadow: none;
       }
     }
   }
