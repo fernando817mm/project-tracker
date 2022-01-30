@@ -149,11 +149,18 @@ div.bg {
 
 div.bg .signup-background,
 .login-background,
-.dashboard-background {
+.dashboard-background,
+.about-background,
+.photo-background {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: 0;
+}
+
+div.bg .about-background {
+  margin-top: -1%;
+  transform: rotate(180deg);
 }
