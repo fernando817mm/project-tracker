@@ -5,12 +5,16 @@ import Navigation from "./common-components/Navigation";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Switch>
+        <Route path="/projects">
+          <Projects />
+        </Route>
         <Route path="/dashboard">
           <Dashboard />
         </Route>

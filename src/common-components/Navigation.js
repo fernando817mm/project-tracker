@@ -1,29 +1,23 @@
 import React from "react";
 import StyledNavigation from "../styled-components/StyledNavigation";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 
 const Navigation = () => {
   return (
     <StyledNavigation>
-      <a href="#home">
+      <NavLink to="/">
         <h2>
           F<span className="lastInitial">M</span>
         </h2>
-      </a>
+      </NavLink>
       <div className="nav-links">
-        {/* <NavLink to="/signup" className="navButton">
-          Sign Up
-        </NavLink>
-        <NavLink to="/login" className="navButton">
-          Login
-        </NavLink> */}
         <a href="#about" className="navButton">
           About
         </a>
-        <a href="#projects" className="navButton">
+        <NavLink to="/projects" className="navButton">
           Projects
-        </a>
+        </NavLink>
         <a href="#contact" className="navButton">
           Contact
         </a>
