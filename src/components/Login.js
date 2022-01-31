@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 import StyledLogin from "../styled-components/StyledLogin";
 import Wave from "react-wavify";
 
@@ -12,6 +13,7 @@ const initialState = {
 
 const Login = () => {
   const [formValue, setFormValue] = useState(initialState);
+  const { push } = useHistory();
 
   const handleChange = (e) => {
     setFormValue({
@@ -22,6 +24,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    push("/dashboard");
     console.log(formValue);
   };
   return (

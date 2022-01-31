@@ -5,11 +5,11 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   height: 100vh;
   font-size: 4em;
   text-transform: uppercase;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Sora", sans-serif;
   font-weight: bold;
   letter-spacing: 0.125em;
   line-height: 1.25em;
@@ -72,6 +72,20 @@ const StyledContainer = styled.div`
   & .second,
   .fourth {
     animation: 1s ease-out 0s 1 slide-from-right;
+  }
+
+  & .second {
+    color: #5bccf6;
+  }
+
+  & .third {
+    font-size: 0.5em;
+    text-transform: lowercase;
+  }
+
+  & .fourth {
+    font-size: 0.25em;
+    letter-spacing: 0.25rem;
   }
 
   @keyframes scroll-down {
