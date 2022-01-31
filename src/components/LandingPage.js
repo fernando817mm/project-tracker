@@ -10,6 +10,7 @@ import mexico from "./../images/mexico.jpeg";
 import tree from "./../images/tree.jpeg";
 import squat from "./../images/squat.svg";
 
+
 const LandingPage = () => {
   return (
     <StyledLandingPage>
